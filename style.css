@@ -1,0 +1,19 @@
+body{
+    background: rgb(36, 36, 36);
+}
+
+.btn-block{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.btn-works{
+    padding: 10px 25px;
+}
+
+#start-btn{
+    color: ;
+}
