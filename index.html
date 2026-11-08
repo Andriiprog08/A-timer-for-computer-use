@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="btn-block">
-        <button class="btn-works" id="start-btn">Start</button>
-        <button class="btn-works" id="pause-btn">Pause</button>
-        <button class="btn-works" id="restart-btn">Restart</button>
-    </div>
+    <main class="timer">
+        <div class="display" id="display" role="timer" aria-live="off">
+            <span id="minutes">00</span><span class="sep">:</span><span id="seconds">00</span><span class="sep small">.</span><span class="ms" id="centiseconds">00</span>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-start" id="start" type="button">Start</button>
+            <button class="btn btn-pause" id="pause" type="button">Pause</button>
+            <button class="btn btn-stop" id="restart" type="button">Restart</button>
+        </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
