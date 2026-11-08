@@ -33,7 +33,9 @@ pauseBtn.addEventListener('click', () => {
 });
 
 stopBtn.addEventListener('click', () => {
-    // clearInterval(...)
-    // reset everything to 0
-    // show 00:00.00
+    clearInterval(intervalId);
+    intervalId = null;
+    elapsed = 0;
+    startTime = 0;
+    updateDisplay();
 });
